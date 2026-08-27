@@ -1,0 +1,9 @@
+appName: shippingservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 50051
+containerEnvVars:
+  PORT: "50051"
+
+servicePort: 50051

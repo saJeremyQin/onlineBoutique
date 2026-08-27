@@ -1,0 +1,9 @@
+appName: adservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 9555
+containerEnvVars:
+  PORT: "9555"
+
+servicePort: 9555

@@ -1,0 +1,10 @@
+appName: paymentservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 50051
+containerEnvVars:
+  PORT: "50051"
+  DISABLE_PROFILER: "1"
+
+servicePort: 50051

@@ -1,0 +1,3 @@
+helm uninstall rediscart cartservice currencyservice emailservice paymentservice \
+productcatalogservice recommendationservice shippingservice adservice \
+checkoutservice frontend

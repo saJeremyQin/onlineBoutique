@@ -1,0 +1,10 @@
+appName: recommendationservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 8080
+containerEnvVars:
+  PORT: "8080"
+  PRODUCT_CATALOG_SERVICE_ADDR: "productcatalogservice:3550"
+
+servicePort: 8080

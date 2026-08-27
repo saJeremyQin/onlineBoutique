@@ -1,0 +1,10 @@
+appName: currencyservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 7000
+containerEnvVars:
+  PORT: "7000"
+  DISABLE_PROFILER: "1"
+
+servicePort: 7000

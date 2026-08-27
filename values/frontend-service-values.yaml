@@ -1,0 +1,21 @@
+appName: frontend
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 8080
+serviceType: LoadBalancer
+containerEnvVars:
+  PORT: "8080"
+  CART_SERVICE_ADDR: "cartservice:7070"
+  PRODUCT_CATALOG_SERVICE_ADDR: "productcatalogservice:3550"
+  SHIPPING_SERVICE_ADDR: "shippingservice:50051"
+  CURRENCY_SERVICE_ADDR: "currencyservice:7000"
+  EMAIL_SERVICE_ADDR: "emailservice:8080"
+  PAYMENT_SERVICE_ADDR: "paymentservice:50051"
+  CHECKOUT_SERVICE_ADDR: "checkoutservice:5050"
+  AD_SERVICE_ADDR: "adservice:9555"
+  RECOMMENDATION_SERVICE_ADDR: "recommendationservice:8080"
+  ENABLE_ASSISTANT: "false"
+  SHOPPING_ASSISTANT_SERVICE_ADDR: "shoppingassistantservice:80"
+
+servicePort: 80

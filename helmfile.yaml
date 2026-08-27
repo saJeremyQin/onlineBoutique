@@ -1,0 +1,66 @@
+releases:
+  - name: rediscart
+    namespace: onlineboutique
+    chart: charts/redis
+    values:
+      - values/redis-values.yaml
+
+  - name: cartservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/cart-service-values.yaml
+  
+  - name: currencyservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/currency-service-values.yaml
+
+  - name: emailservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/email-service-values.yaml
+  
+  - name: paymentservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/payment-service-values.yaml
+  
+  - name: productcatalogservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/productcatalog-service-values.yaml  
+
+  - name: recommendationservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/recommendation-service-values.yaml 
+
+  - name: shippingservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/shipping-service-values.yaml
+    
+  - name: adservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/ad-service-values.yaml
+
+  - name: checkoutservice
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/checkout-service-values.yaml
+    
+  - name: frontend
+    namespace: onlineboutique
+    chart: charts/onlineboutique
+    values:
+      - values/frontend-service-values.yaml 

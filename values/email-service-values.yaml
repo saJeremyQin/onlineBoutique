@@ -1,0 +1,9 @@
+appName: emailservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 8080
+containerEnvVars:
+  PORT: "8080"
+
+servicePort: 5000

@@ -1,0 +1,2 @@
+appName: redis-data
+appReplicas: 2

@@ -1,0 +1,9 @@
+appName: productcatalogservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 3550
+containerEnvVars:
+  PORT: "3550"
+
+servicePort: 3550

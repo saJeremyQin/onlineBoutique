@@ -1,0 +1,9 @@
+appName: cartservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice
+appVersion: v0.10.6
+appReplicas: 2
+containerPort: 7070
+containerEnvVars:
+  PORT: "7070"
+
+servicePort: 7070
